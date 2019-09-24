@@ -12,7 +12,11 @@ margin-left:0px;
 margin-right: 0px;
 /* border: 1px solid red */
 } 
-
+*:focus{
+    outline: none;
+    border-bottom:  3px solid #C8122E;
+    transition: 0.5s;
+}
 li{
     display: inline-block;
    padding-left: 10px;
@@ -21,6 +25,12 @@ li{
    font-size: 13px;
 font-weight: bold;
 }
+
+.content{
+    display: none;
+}
+
+
 a{
     text-decoration: none;
     color:#0a1118
@@ -152,6 +162,14 @@ nav{
        color: #0A1118;
         border: none;
    }
+   .odd:hover{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    transition: box-shadow 0.5s ease-in-out;
+   }
+   .odd:focus{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    transition: box-shadow 0.5s ease-in-out;
+   }
   .even{
     margin:20px;
     padding: 10px;
@@ -160,6 +178,14 @@ nav{
     
     /* font-size: 12px; */
     background-color: #EDAB5E;
+   }
+   .even:focus{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    transition: box-shadow 0.5s ease-in-out;
+   }
+   .even:hover{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    transition: box-shadow 0.5s ease-in-out;
    }
    .section_4{
        background-color: #0A1118;
