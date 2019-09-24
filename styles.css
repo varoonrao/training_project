@@ -17,6 +17,7 @@ margin-right: 0px;
     outline: none;
     border-bottom:  3px solid #C8122E;
     transition: 0.5s;
+    color:#C8122E;
 }
 li{
     display: inline-block;
