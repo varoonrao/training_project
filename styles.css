@@ -371,3 +371,110 @@ nav a {
         display: inline-block;
     }
 }
+
+
+
+
+/* styles for contact us page */
+
+
+.input_field {
+    margin: 15px;
+    padding: 10px;
+    width: 35%;
+    position: relative;
+    font-family: 'poppins';
+    outline: none;
+    border-bottom: 1px solid #0A1118;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: white;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.input_field::placeholder {
+    font-family: 'poppins'
+}
+
+.input_field::after {
+    position: absolute;
+    left: px;
+    top: 3px;
+    content: attr(data-placeholder);
+    pointer-events: none;
+}
+
+.submit_button {
+    border: none;
+    background-color: #C8122E;
+    color: white;
+    font-weight: bolder;
+    font-family: 'poppins';
+    size: 18px;
+    padding: 10px 20px 10px 20px;
+}
+
+.checkbox_round {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid rgb(148, 148, 148);
+    /* -webkit-appearance: none; */
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox_round:checked {
+    background-color: #C8122E;
+}
+
+.main_div {
+    padding: 20px;
+    box-shadow: 0 19px 30px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    width: 50%;
+}
+
+input:focus::placeholder,
+input:hover::placeholder {
+    font-size: 12px;
+    position: relative;
+    top: -20px;
+    left: 0px;
+    padding: 0px;
+    transition: 0.3s;
+}
+
+input:focus:required {
+    border-bottom: 1px solid #C8122E;
+    border-left: 1px solid #C8122E;
+    border-right: 1px solid #C8122E;
+
+}
+
+select:invalid {
+    color: gray;
+}
+
+select:focus:required {
+    border-bottom: 1px solid #C8122E;
+    border-left: 1px solid #C8122E;
+    border-right: 1px solid #C8122E;
+}
+
+.placeholder {
+    position: relative;
+}
+
+.placeholder::after {
+    position: absolute;
+    /* left: 5px;
+    top: 3px; */
+    content: attr(data-placeholder);
+    pointer-events: none;
+    opacity: 0.6;
+    z-index: -1;
+}
