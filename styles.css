@@ -21,7 +21,7 @@ ul {
     /* border-left:1px solid #C8122E;
     border-right:1px solid #C8122E;*/
     transition: 0.5s;
-    padding-left: 3px;  
+    padding-left: 3px;
     padding-right: 3px;
     color: #C8122E;
 }
@@ -317,6 +317,7 @@ footer {
     /* width: 30%; */
     padding: 15px;
 }
+
 nav ul ul {
     display: none;
     position: absolute;
@@ -324,28 +325,31 @@ nav ul ul {
 }
 
 /* Display Dropdowns on Hover */
-nav ul li:hover> ul , nav ul li:focus-within> ul{
-    display:inherit;
+nav ul li:hover>ul,
+nav ul li:focus-within>ul {
+    display: inherit;
 }
 
 /* Fisrt Tier Dropdown */
 nav ul ul li {
-    min-width:170px;
-    display:list-item;
-    background-color: #d3d3d3;
+    min-width: 170px;
+    display: list-item;
+    background-color: #fcf9f9f1;
     padding: 15px;
     position: relative;
     z-index: 10;
 }
 
-nav ul ul li:hover,nav ul ul li:focus{
-    padding-left: 20px;
-    transition: 0.5s;
+nav ul ul li:hover,
+nav ul ul li:focus {
+    /* padding-left: 20px; */
+    transition: 0.3s;
 }
 
-nav a{
-    display:block;
+nav a {
+    display: block;
 }
+
 .nav_head_right {
     /* width: 70%; */
     align-items: center;
