@@ -61,7 +61,8 @@ nav {
     cursor: pointer;
 }
 
-.contact:hover,.contact:focus {
+.contact:hover,
+.contact:focus {
     background-color: gray;
 }
 
@@ -173,7 +174,8 @@ nav {
     font-weight: bold;
 }
 
-.button_know:hover,.button_know:focus {
+.button_know:hover,
+.button_know:focus {
     background-color: #EDAB5E;
 }
 
@@ -191,12 +193,42 @@ nav {
     cursor: pointer;
 }
 
-.odd:hover ,.odd:focus{
+/* Hover Menu */
+
+nav {
+
+    align-items: center;
+    /* background-color: #E64A19; */
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0px 0px 0 0;
+    display: inline-block;
+}
+
+.header_ul {
+    background-color: white;
+    color: aliceblue;
+    vertical-align: middle;
+}
+
+.header_li {
+    padding: 20px;
+    outline-color: #C8122E;
+}
+
+.odd:hover,
+.odd:focus {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     transition: box-shadow 0.5s ease-in-out;
 }
-
-
 
 .even {
     margin: 20px;
@@ -209,7 +241,8 @@ nav {
     background-color: #EDAB5E;
 }
 
-.even:focus ,.even:hover{
+.even:focus,
+.even:hover {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     transition: box-shadow 0.5s ease-in-out;
 }
@@ -281,9 +314,34 @@ footer {
     /* width: 30%; */
     padding: 15px;
 }
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
 
+/* Display Dropdowns on Hover */
+nav ul li:hover> ul , nav ul li:focus-within> ul{
+    display:inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    min-width:auto;
+    display:list-item;
+    background-color: #d3d3d3;
+    padding: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+nav a{
+    display:block;
+}
 .nav_head_right {
     /* width: 70%; */
+    align-items: center;
+    padding-top: 20px;
     float: right;
     display: inline-block;
 }
@@ -299,63 +357,5 @@ footer {
         width: 100%;
         float: right;
         display: inline-block;
-    }
-}
-
-[class*="col-"] {
-    width: 100%;
-    display: inline-block;
-}
-
-
-@media only screen and (min-width: 768px) {
-
-    /* For desktop: */
-    .col-1 {
-        width: 8.33%;
-    }
-
-    .col-2 {
-        width: 16.66%;
-    }
-
-    .col-3 {
-        width: 25%;
-    }
-
-    .col-4 {
-        width: 33.33%;
-    }
-
-    .col-5 {
-        width: 41.66%;
-    }
-
-    .col-6 {
-        width: 50%;
-    }
-
-    .col-7 {
-        width: 58.33%;
-    }
-
-    .col-8 {
-        width: 66.66%;
-    }
-
-    .col-9 {
-        width: 75%;
-    }
-
-    .col-10 {
-        width: 83.33%;
-    }
-
-    .col-11 {
-        width: 91.66%;
-    }
-
-    .col-12 {
-        width: 100%;
     }
 }
