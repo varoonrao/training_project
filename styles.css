@@ -384,7 +384,7 @@ nav a {
     width: 35%;
     position: relative;
     font-family: 'poppins';
-    outline: none;
+    /* outline: none; */
     border-bottom: 1px solid #0A1118;
     border-top: none;
     border-left: none;
@@ -446,13 +446,13 @@ input:hover::placeholder {
     left: 0px;
     padding: 0px;
     transition: 0.3s;
+    color:red;
 }
 
 input:focus:required {
-    border-bottom: 1px solid #C8122E;
-    border-left: 1px solid #C8122E;
-    border-right: 1px solid #C8122E;
-
+    /* outline: coral; */
+    /* border:1px solid red; */
+     
 }
 
 select:invalid {

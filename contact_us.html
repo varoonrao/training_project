@@ -19,12 +19,13 @@
             <div class="main_div">
                 <div class="main_div_second">
                     <form action="thank_you.html">
-                        <input type="text" class="input_field placeholder" required placeholder="First Name" data-placeholder="my placeholder" />
-                        <input type="text" class="input_field" placeholder="Last Name" required /><br>
-                        <input type="email" class="input_field" placeholder="Work email" required />
-                        <input type="text" class="input_field" placeholder="Company" required /><br>
+                        <!-- <h6 style="font-size: 14px;color: red;">* Required</h6> -->
+                        <input type="text" class="input_field placeholder" required placeholder="First Name *" data-placeholder="my placeholder" />
+                        <input type="text" class="input_field" placeholder="Last Name *" required /><br>
+                        <input type="email" class="input_field" placeholder="Work email *" required />
+                        <input type="text" class="input_field" placeholder="Company *" required /><br>
                         <select name="Industry" id="" class="input_field" required>
-                            <option value="" hidden selected>Industry</option>
+                            <option value="" hidden selected>Industry *</option>
                             <option value="">Microsoft</option>
                             <option value="">Google</option>
                             <option value="">Apple</option>
@@ -33,7 +34,7 @@
 
                         </select>
                         <select name="job" id="" class="input_field" required>
-                            <option value="" hidden selected>Job Option</option>
+                            <option value="" hidden selected>Job Option *</option>
                             <option value="">Junior Software Developer</option>
                             <option value="">Junior Software Engineer</option>
                             <option value="">Senior Software Developer</option>
@@ -42,7 +43,7 @@
                         </select><br>
                         <input type="tel" maxlength="10" class="input_field" placeholder="Phone Number" />
                         <select name="country" id="" class="input_field" required>
-                            <option value="" hidden selected>Country</option>
+                            <option value="" hidden selected>Country *</option>
                             <option value="Afghanistan">Afghanistan</option>
                             <option value="Åland Islands">Åland Islands</option>
                             <option value="Albania">Albania</option>
